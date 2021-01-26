@@ -1,0 +1,33 @@
+
+span {
+    background-color: lightgray;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    padding: .3em .8em;
+}
+.play-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+    border: 1px solid lightgray;
+    margin-bottom: 1em;
+}
+
+.play-container input {
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.active {
+    background-color: red;
+    border: 5px solid #f48044;
+}
+.active8 {
+    background-color: green;
+    border: 5px solid #44f4e5;
+
+}
+.notActive {
+    background: lightgray;
+}

@@ -1,0 +1,18 @@
+<h1>List Component</h1>
+<input type="text" (keyup.enter)="add(carType)" #carType>
+
+<div *ngIf="cars?.length > 0; else NoData">
+    <ul>
+        <li *ngFor="let item of cars">
+            {{ item.payload.val() || item.payload.val().title }}
+            <button class="btn" (click)="update(item, carType)">update</button>
+            <button class="btn" (click)="remove(item)">remove</button>
+        </li>
+    </ul>
+</div>
+
+<ng-template #NoData>
+    <div>
+        <p>no Data Found</p>
+    </div>
+</ng-template>
